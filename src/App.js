@@ -13,6 +13,10 @@ function App() {
       <FileUpload onFileUpload={setText} />
       <VoiceSelector onVoiceChange={setVoice} />
       <TextToSpeech text={text} voice={voice} />
+      <div>
+        <h2>Extracted Text</h2>
+        <p>{text}</p>
+      </div>
     </div>
   );
 }
